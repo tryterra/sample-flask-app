@@ -13,3 +13,5 @@ python -m sample
 ```
 
 **N.B** May need to use `python3` depending on your setup.
+
+Don't forget to your Terra credentials in the `.env` file!
