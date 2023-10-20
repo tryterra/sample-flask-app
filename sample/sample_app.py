@@ -1,11 +1,12 @@
 import flask
 import json
 import http
+import os
 
 from flask import request
 from terra import Terra
 
-terra = Terra(api_key='YOUR API KEY', dev_id='YOUR DEV ID', secret='YOUR TERRA SECRET')
+terra = Terra(api_key=os.environ["TERRA_API_KEY"], dev_id=os.environ["TERRA_DEV_ID"], secret=os.environ["TERRA_WEBHOOK_SECRET"])
 
 def hello_terra():
     # Print it here
